@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    organization = "Blisscs"
+
+    workspaces {
+      name = "learn-terraform-aws-instance"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
